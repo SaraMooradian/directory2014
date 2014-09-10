@@ -2,12 +2,12 @@
 
 one:
   name: MyString
-  school: MyText
-  displayname: MyText
+  school: MyString
+  displayname: MyString
   grade: MyString
 
 two:
   name: MyString
-  school: MyText
-  displayname: MyText
+  school: MyString
+  displayname: MyString
   grade: MyString

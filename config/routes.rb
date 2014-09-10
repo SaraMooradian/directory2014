@@ -1,14 +1,11 @@
 Rails.application.routes.draw do
   
-  resources :teachers do
+  resources :staffs do
     collection { post :import}
   end
 
-  root 'teachers#index'
 
-#get 'teachers/:id'
-  get 'teachers/import'
-
+  root 'staffs#index'
 end
 
   # The priority is based upon order of creation: first created -> highest priority.
