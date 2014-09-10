@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  
+  resources :teachers do
+    collection { post :import}
+  end
+
+  root 'teachers#index'
+
+#get 'teachers/:id'
+  get 'teachers/import'
+
+end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,4 +65,3 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
